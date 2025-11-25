@@ -243,12 +243,14 @@ const App = () => {
                 </div>
               </div>
 
-              {openSoftware === index && (
-                <div className="brand-desc">
-                  <p>{item.desc}</p>
-                  <video src={vid} controls></video>
-                </div>
-              )}
+              <div
+                className={`brand-desc ${
+                  openSoftware === index ? "animate" : ""
+                }`}
+              >
+                <p>{item.desc}</p>
+                <video src={vid} controls></video>
+              </div>
             </div>
           ))}
         </div>
@@ -408,17 +410,19 @@ const App = () => {
                     className={`arrow ${
                       openAwards === index ? "rotate-up" : ""
                     }`}
-                    onClick={() => toggleSoftware(index)}
+                    onClick={() => toggleAwards(index)}
                   />
                 </div>
               </div>
 
-              {openAwards === index && (
-                <div className="brand-desc">
-                  <p>{item.desc}</p>
-                  <video src={vid} controls></video>
-                </div>
-              )}
+              <div
+                className={`brand-desc ${
+                  openAwards === index ? "animate" : ""
+                }`}
+              >
+                <p>{item.desc}</p>
+                <video src={vid} controls></video>
+              </div>
             </div>
           ))}
         </div>
@@ -544,16 +548,16 @@ const App = () => {
                     className={`arrow ${
                       openWorks === index ? "rotate-up" : ""
                     }`}
-                    onClick={() => toggleSoftware(index)}
+                    onClick={() => toggleWorks(index)}
                   />
                 </div>
               </div>
 
-              {openWorks === index && (
-                <div className="brand-desc">
-                  <p>{item.desc}</p>
-                </div>
-              )}
+              <div
+                className={`brand-desc works ${openWorks === index ? "animate" : ""}`}
+              >
+                <p>{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>

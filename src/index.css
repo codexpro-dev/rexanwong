@@ -53,7 +53,7 @@ a {
   align-items: center;
 }
 
-.prof-txt p .gi{
+.prof-txt p .gi {
   margin-right: 8px;
 }
 
@@ -116,36 +116,41 @@ a .link {
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.link:hover{
+.link:hover {
   scale: 1.03;
   box-shadow: -2px 2px 8px 1px rgba(159, 155, 155, 0.395);
   color: rgb(56, 55, 55);
 }
 
-.link .ico{
+.link .ico {
   margin-right: 7px;
-  font-size: 24px;  
+  font-size: 24px;
 }
 
-.link .ico-red{
+.link .ico-red {
   color: red;
 }
 
-.link .ico-blu{
+.link .ico-blu {
   color: rgb(7, 75, 176);
   margin-right: 0;
 }
 
-.link .ico-bk{
+.link .ico-bk {
   font-size: 18px;
   margin-right: 0;
 }
 
 .softwares {
   margin-top: 4rem;
+  z-index: 22;
+}
+
+.software {
+  overflow: hidden;
 }
 
 .softwares h1 {
@@ -159,6 +164,8 @@ a .link {
   display: flex;
   justify-content: space-between;
   margin-top: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
 }
 
 .brand p {
@@ -167,74 +174,100 @@ a .link {
   margin-bottom: 0.5rem;
 }
 
-.brand-desc p{
+.brand-desc p {
   font-size: 17px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.brand-desc video{
+.brand-desc video {
   border-radius: 15px;
   width: 90%;
   display: block;
 }
 
-.brand img{
+.brand img {
   border-radius: 5px;
   margin-right: 15px;
   height: 2rem;
   width: 2rem;
 }
 
-.div{
+.div {
   display: flex;
   width: 100%;
 }
 
-.brandicons p{
+.brandicons p {
   white-space: nowrap;
-
 }
 
-.brandicons{
+.brandicons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.brandicons .arrow, .brandicons .iconn {
+.brandicons .arrow,
+.brandicons .iconn {
   font-size: 16px;
   margin-bottom: 5px;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-.brandicons .iconn{
+.brandicons .iconn {
   font-size: 25px;
   font-weight: 100;
   margin-bottom: 2px;
 }
 
-.brandicons .arrow{
+.brandicons .arrow {
   padding: 5px;
   border-radius: 5px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-.brandicons .arrow:hover{
+.brandicons .arrow:hover {
   background: #00000016;
 }
 
-.brand p:hover{
+.brand p:hover {
   opacity: 0.7;
 }
 
+.brand-desc {
+  opacity: 0;
+  height: 0;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
 
-.rotate-up{
+.works {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: ease-in-out 0.2s;
+}
+
+.animate {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  visibility: visible;
+  margin-top: 0;
+  height: 100%;
+}
+
+.rotate-up {
   transform: rotate(180deg);
 }
 
+.works p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 @media screen and (max-width: 900px) {
-  main{
+  main {
     max-width: 700px;
     width: 100%;
     display: flex;
@@ -245,135 +278,133 @@ a .link {
     flex-wrap: wrap;
   }
 
-  .prof-links{
+  .prof-links {
     flex-wrap: wrap;
   }
 
-  .profile-header{
+  .profile-header {
     align-items: flex-start;
     justify-content: space-between;
   }
 
-  .prof-txt h1{
+  .prof-txt h1 {
     font-size: 3rem;
   }
 
-  .prof-desc b{
+  .prof-desc b {
     font-size: 1.2rem;
     padding-right: 30px;
   }
 
-  .prof-img img{
+  .prof-img img {
     width: 6rem;
   }
-
 }
 
 @media screen and (max-width: 800px) {
-  main{
+  main {
     max-width: 650px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  main{
+  main {
     width: 100%;
     max-width: 100%;
     margin: 0 0.4rem;
   }
 
-  .prof-txt h1{
+  .prof-txt h1 {
     font-size: 2.5rem;
   }
 
-  .prof-desc p{
+  .prof-desc p {
     font-size: 15px;
   }
 
-  .prof-img img{
+  .prof-img img {
     width: 7rem;
   }
 
-  .link p{
+  .link p {
     font-size: 14px;
   }
 
-  .link .ico{
+  .link .ico {
     font-size: 20px;
   }
 
-  .link .ico-bk{
+  .link .ico-bk {
     font-size: 15px;
   }
 
-  .prof-img{
+  .prof-img {
     margin-right: 1.8rem;
   }
 
-  .softwares h1{
+  .softwares h1 {
     font-size: 1.8rem;
   }
 
-  .softwares{
+  .softwares {
     margin-right: 1rem;
   }
 
-  .brand p{
+  .brand p {
     font-size: 18px;
   }
 
-  .brand .iconn{
+  .brand .iconn {
     font-size: 20px;
   }
 
-  .brand .arrow{
+  .brand .arrow {
     font-size: 17px;
   }
 
-  .divv p{
-    font-size:  16px;
+  .divv p {
+    font-size: 16px;
   }
 
-  .div p{
+  .div p {
     padding-right: 20px;
   }
 
-  .brand-desc p{
+  .brand-desc p {
     font-size: 16px;
     padding-right: 20px;
   }
 }
 
 @media screen and (max-width: 440px) {
-  .profile-header{
+  .profile-header {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
   }
 
-  .prof-txt{
+  .prof-txt {
     order: 2;
   }
 
-  .prof-txt h1{
+  .prof-txt h1 {
     font-size: 1.5rem;
   }
 
-  .divv p{
+  .divv p {
     font-size: 14px;
   }
 
-  .brandicons p{
+  .brandicons p {
     font-size: 15px;
     padding-right: 10px;
   }
 
-  .brandicons .arrow{
+  .brandicons .arrow {
     margin-left: 0;
   }
 
   .prof-desc {
     width: 21rem;
   }
-
 }
