@@ -1,3 +1,379 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  max-width: 850px;
+  padding: 0.5rem 0rem;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.prof-txt h1 {
+  font-family: Georgia, sans-serif;
+  font-size: 3.3rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.prof-txt p {
+  margin-top: 5px;
+  font-size: 11px;
+  font-family: sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.prof-txt p .gi{
+  margin-right: 8px;
+}
+
+.prof-txt a {
+  color: rgb(64, 63, 63);
+  font-weight: 500;
+}
+
+.prof-txt a:hover {
+  text-decoration: underline;
+}
+
+.prof-img img {
+  width: 7rem;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.prof-desc {
+  margin-bottom: 1.7rem;
+}
+
+.prof-desc p {
+  font-size: 18.5px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.prof-desc b {
+  font-weight: 500;
+  font-size: 22.5px;
+}
+
+.prof-desc .b {
+  margin-bottom: 1rem !important;
+}
+
+.prof-links {
+  display: flex;
+}
+
+.prof-links p {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+a .link {
+  display: flex;
+  border: 1px solid rgba(128, 128, 128, 0.016);
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: -2px 2px 8px -1px rgba(159, 155, 155, 0.395);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: .3s ease-in-out;
+}
+
+.link:hover{
+  scale: 1.03;
+  box-shadow: -2px 2px 8px 1px rgba(159, 155, 155, 0.395);
+  color: rgb(56, 55, 55);
+}
+
+.link .ico{
+  margin-right: 7px;
+  font-size: 24px;  
+}
+
+.link .ico-red{
+  color: red;
+}
+
+.link .ico-blu{
+  color: rgb(7, 75, 176);
+  margin-right: 0;
+}
+
+.link .ico-bk{
+  font-size: 18px;
+  margin-right: 0;
+}
+
+.softwares {
+  margin-top: 4rem;
+}
+
+.softwares h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.brand p {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.brand-desc p{
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.brand-desc video{
+  border-radius: 15px;
+  width: 90%;
+  display: block;
+}
+
+.brand img{
+  border-radius: 5px;
+  margin-right: 15px;
+  height: 2rem;
+  width: 2rem;
+}
+
+.div{
+  display: flex;
+  width: 100%;
+}
+
+.brandicons p{
+  white-space: nowrap;
+
+}
+
+.brandicons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandicons .arrow, .brandicons .iconn {
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.brandicons .iconn{
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 2px;
+}
+
+.brandicons .arrow{
+  padding: 5px;
+  border-radius: 5px;
+  transition: .3s ease;
+}
+
+.brandicons .arrow:hover{
+  background: #00000016;
+}
+
+.brand p:hover{
+  opacity: 0.7;
+}
+
+
+.rotate-up{
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 900px) {
+  main{
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: start;
+    margin: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .prof-links{
+    flex-wrap: wrap;
+  }
+
+  .profile-header{
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .prof-txt h1{
+    font-size: 3rem;
+  }
+
+  .prof-desc b{
+    font-size: 1.2rem;
+    padding-right: 30px;
+  }
+
+  .prof-img img{
+    width: 6rem;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  main{
+    max-width: 650px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0.4rem;
+  }
+
+  .prof-txt h1{
+    font-size: 2.5rem;
+  }
+
+  .prof-desc p{
+    font-size: 15px;
+  }
+
+  .prof-img img{
+    width: 7rem;
+  }
+
+  .link p{
+    font-size: 14px;
+  }
+
+  .link .ico{
+    font-size: 20px;
+  }
+
+  .link .ico-bk{
+    font-size: 15px;
+  }
+
+  .prof-img{
+    margin-right: 1.8rem;
+  }
+
+  .softwares h1{
+    font-size: 1.8rem;
+  }
+
+  .softwares{
+    margin-right: 1rem;
+  }
+
+  .brand p{
+    font-size: 18px;
+  }
+
+  .brand .iconn{
+    font-size: 20px;
+  }
+
+  .brand .arrow{
+    font-size: 17px;
+  }
+
+  .divv p{
+    font-size:  16px;
+  }
+
+  .div p{
+    padding-right: 20px;
+  }
+
+  .brand-desc p{
+    font-size: 16px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .profile-header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .prof-txt{
+    order: 2;
+  }
+
+  .prof-txt h1{
+    font-size: 1.5rem;
+  }
+
+  .divv p{
+    font-size: 14px;
+  }
+
+  .brandicons p{
+    font-size: 15px;
+    padding-right: 10px;
+  }
+
+  .brandicons .arrow{
+    margin-left: 0;
+  }
+
+  .prof-desc {
+    width: 21rem;
+  }
+
+}
